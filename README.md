@@ -1,3 +1,5 @@
+# Thanks to the original implementation: [network-slimming](https://github.com/Eric-mingjie/network-slimming)
+  and the object detection pruning with mobilev2-ssdlite has been added
 # Network Slimming (Pytorch)
 
 This repository contains an official pytorch implementation for the following paper  
@@ -96,8 +98,4 @@ Note: For results of pruning 60% of the channels for resnet164-cifar100, in this
 |    Parameters     |  1.10M  |            1.10M            |        0.71M        |         0.71M         |  0.50M       |     0.50M    |
 
 ## Prune mobilev2-ssdlite
-# details to see [README](./mbv2-ssdlite/README.md)
-
-## Contact
-sunmj15 at gmail.com 
-liuzhuangthu at gmail.com  
+details to see [README](./mbv2-ssdlite/README.md)
