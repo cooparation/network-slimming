@@ -105,7 +105,7 @@ def convert_locations_to_boxes(locations, priors, center_variance,
     #    torch.exp(locations[..., 2:] * size_variance) * priors[..., 2:]
     #], dim=locations.dim() - 1)
     #print(locations[..., :2].device, priors[...,2:].cpu())
-    # sanjun
+    # Changed
     if 'cuda' in str(locations[..., :2].device):
         return torch.cat([
             locations[..., :2] * center_variance * priors[..., 2:].cuda() + priors[..., :2].cuda(),
